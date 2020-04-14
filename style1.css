@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    color: white;
+    background-image:linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;
+    padding:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#overlay {
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 50%;
+    z-index: -1;
+    
+}
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#quote {
+    height: 50%;
+    width: 50%;
+    font-size: 6rem;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#settings {
+    background-color: rgba(50, 115, 220, 0.3);;
+    border-radius: 10px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 1.3rem;
+    padding: 5px;    
+}
+
+#displaySettings > div {
+    margin: 10px 0;
+}
+
+textarea {
+    height:5vh;
+    width:35vw;
+}
