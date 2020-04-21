@@ -1,7 +1,7 @@
 let localStorage = window.localStorage
 
 function refresh() {
-    localStorage.clear()
+    // localStorage.clear()
     document.body.style.backgroundImage= localStorage.getItem('bg')
     document.getElementById('overlay').style.backgroundColor=localStorage.getItem('overlay')
     document.getElementById('overlay').style.opacity=localStorage.getItem('transp')
@@ -18,11 +18,14 @@ function quote(event) {
 
 function bgImage(ev) {
     let imageURL =  'https://cors-anywhere.herokuapp.com/' + ev.target.value;
- 
     downloadedImg = new Image;
     downloadedImg.crossOrigin = "Anonymous";
     downloadedImg.src = imageURL;
     document.getElementById('bg').setAttribute('src', downloadedImg.src)
+    
+
+
+
     localStorage.setItem('bg',`url(${downloadedImg.src})` )
 
 }
