@@ -40,12 +40,13 @@ function slide() {
         settings.style.visibility='visible'
 
         buttons.style.transform=null
+        buttons.style.position='relative'
         hideButton.innerHTML='Hide Editor'
 
 
     } else {
         settings.style.visibility='hidden'
-        buttons.style.transform='translateY(20vh)'
+        buttons.style.position='absolute' 
         hideButton.innerHTML='Show Editor'
     }
 }
